@@ -28,12 +28,12 @@ function QuoteCard({ data }) {
     return (
         <Container className={classes.root}>
             <Grid container justifyContent='center'>
-                <Grid item xs={6}>
+                <Grid item xs={6} align='center'>
                     <Fade right>
                         <Card elevation={15} variant='outlined' className={classes.card}>
                             <CardContent>
                                 <Fade left>
-                                    <Typography variant='h4' color='textPrimary'>
+                                    <Typography variant='h4' color='textPrimary' alignText='center'>
                                         {setup}
                                     </Typography>
                                 </Fade>
@@ -50,7 +50,7 @@ function QuoteCard({ data }) {
                             </IconButton>
                             <Collapse in={expanded} timeout="auto" unmountOnExit>
                                 <CardContent>
-                                    <Typography variant='h5' color='primary'>
+                                    <Typography variant='h5' color='primary' alignText='center'>
                                         {delivery}
                                     </Typography>
                                 </CardContent>
